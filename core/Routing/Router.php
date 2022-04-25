@@ -2,7 +2,9 @@
 
 namespace Core\Routing;
 
-class Router
+use Core\Singleton;
+
+class Router extends Singleton
 {
     protected string $incomeRoute;
     protected string $method;
@@ -24,5 +26,6 @@ class Router
 
         return '404';
     }
+
 
 }
